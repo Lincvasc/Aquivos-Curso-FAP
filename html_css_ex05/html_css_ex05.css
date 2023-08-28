@@ -1,0 +1,31 @@
+/* No último trabalho, você criou uma página apresentando um ponto turístico da sua cidade e os locais que você gosta de visitar.
+
+Agora, crie um arquivo separado para definir as configurações de estilo que serão aplicadas nas páginas HTML criadas.
+Utilize CSS para definir um background, seja uma cor ou imagem, para aplicar diferentes estilos de fonte, cores e tamanhos nos parágrafos, destacando os títulos com efeitos de estilo. */
+
+body {
+    background-color: rgb(105, 105, 105);
+}
+
+h1 {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+    width: 765px;
+}
+
+a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+a:visited {
+    color: white;
+}
