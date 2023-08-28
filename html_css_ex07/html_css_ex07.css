@@ -1,0 +1,18 @@
+/* Para esta atividade, use a página que você elaborou sobre o ponto turístico e locais favoritos em sua cidade. Aplique os seus conhecimentos adquiridos em CSS para melhorar o código HTML que você desenvolveu, adicione estilos e torne as suas páginas mais atraentes visualmente.*/
+
+
+body {
+    margin: 20px 40px;
+}
+
+h1 {
+    padding: 10px;
+    display: inline-block;
+    letter-spacing: 10px;
+}
+
+p {
+   line-height: 40px; 
+}
+
+
