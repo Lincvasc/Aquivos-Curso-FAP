@@ -1,0 +1,23 @@
+/* No projeto anterior, você criou uma página apresentando pontos turísticos.
+A partir disso, desenvolva um arquivo para armazenar as configurações de estilo que serão utilizadas na página HTML.
+Utilize IDs para aplicar efeitos nos títulos e crie uma classe para estilizar um elemento específico da página.
+Certifique-se de aplicar esses estilos de forma coesa e esteticamente agradável no site.*/
+
+
+#titulo {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(233, 148, 37);
+}
+
+.list-item {
+    list-style: none;
+}
+
+.image {
+    border-radius: 8px;
+}
+
+
