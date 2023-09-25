@@ -8,6 +8,7 @@
 
 Crie um programa que utilize essas três funções de forma lógica, por exemplo: um programa de calculadora. */
 
+
 // 1.Função sem parâmetros
 function appName() {
   alert("CALCULADORA");
