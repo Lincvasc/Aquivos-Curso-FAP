@@ -7,39 +7,41 @@ Observações:
 -o número da conta  deve retornar o número da conta.
 */
 
+
 function Banco(conta, saldo, tipoConta, agencia) {
   this.conta = conta;
   this.saldo = saldo;
   this.tipoConta = tipoConta;
   this.agencia = agencia;
 
-  this.buscarSaldo = function() {
-      return this.saldo;
+  this.buscarSaldo = function () {
+    return this.saldo;
   };
 
-  this.deposito = function(valor) {
-      this.saldo += valor;
+  this.deposito = function (valor) {
+    this.saldo += valor;
+    return `Depósito Realizado: R$${valor}
+    Saldo Atualizado: R$${this.saldo}`;
   };
 
-  this.saque = function(valor) {
-      if (this.saldo >= valor) {
-          this.saldo -= valor;
-      } else {
-          console.log('Saldo insuficiente');
-      }
+  this.saque = function (valor) {
+    if (valor > this.saldo) {
+      return "Saldo insuficiente.";
+    }
+
+    this.saldo -= valor;
+    return `Saque Realizado: R$${valor}
+    Saldo Atualizado: R$${this.saldo}`;
   };
 
-  this.numeroConta = function() {
-      return this.conta;
+  this.numeroConta = function () {
+    return this.conta;
   };
 }
 
 
-let banco = new Banco('123456', 1000, 'Corrente', '001');
-
-console.log(banco.buscarSaldo()); 
-banco.deposito(500); 
-console.log(banco.buscarSaldo());
-banco.saque(200); 
-console.log(banco.buscarSaldo()); 
-console.log(banco.numeroConta()); 
+const minhaConta = new Banco('1234-5', 2000, "Corrente", "001");
+console.log(`Conta n°: ${minhaConta.numeroConta()}`);
+console.log(`Saldo Anterior: R$${minhaConta.buscarSaldo()}`);
+console.log(minhaConta.deposito(1000));
+console.log(minhaConta.saque(300));
